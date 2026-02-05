@@ -36,7 +36,7 @@ def generate_creative_plan(user_req, genre, layout, key):
         return None
     
     genai.configure(api_key=key)
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     genre_hint = GENRES.get(genre, "")
     prompt = f"""
